@@ -1,0 +1,180 @@
+@import url("https://use.typekit.net/cwo4tdf.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+
+  font-size: 12px;
+  color: #fff;
+  height: 100%;
+}
+h1 {
+  color: #fffffe;
+}
+h2,
+h4 {
+  color: #232946;
+}
+.gradient {
+  background-color: #af8c9d;
+  background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
+}
+.quote {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.quote-author {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-caps {
+  text-transform: uppercase;
+}
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+.home {
+  overflow: hidden;
+  height: 100%;
+  padding-bottom: 0;
+  pointer-events: none;
+}
+
+.page {
+  width: 100vw;
+  position: absolute;
+  transform: translate3d(0, 20%, 0);
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  background: none;
+  opacity: 0;
+  padding-bottom: 10vw;
+  transition: 0.8s ease-in-out;
+}
+.page.show {
+  z-index: 100;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.home .titles {
+  top: 20%;
+  left: 50%;
+  z-index: 100;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.home .page-title {
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
+  font-size: 5vw;
+  letter-spacing: 2.6vw;
+  color: #3d5257;
+  color: #f0ffff;
+  text-shadow: 0px 6px 10px #3d5257;
+  text-indent: 2.6vw;
+  opacity: 1;
+  font-weight: 100;
+  position: relative;
+  top: 0;
+  left: auto;
+  transform: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.page-title {
+  user-select: none;
+  white-space: nowrap;
+  position: absolute;
+  top: 12vh;
+  font-size: 28vh;
+  font-family: futura-pt;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  pointer-events: none;
+  margin: 0 auto;
+  width: 100vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  letter-spacing: 2vh;
+  font-weight: 100;
+}
+
+.header-menu {
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+}
+.header-menu .menu-item {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2vw;
+  font-size: 0.9vw;
+  opacity: 0.5;
+  padding-right: 6.5px;
+}
+
+@media only screen and (max-width: 801px) {
+  .home .page-title {
+    font-size: 15vw;
+  }
+  .page-title {
+    font-size: 10vh;
+  }
+  .home .page-subtitle {
+    font-size: 4vw;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #fffffe;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/contentPages.css">
+    <link rel="stylesheet" href="../src/css/cards.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62a451c573.js" crossorigin="anonymous"></script>
+    <script src="js/nebula.js" type="module" defer></script>
+    <title>Projects</title>
+</head>
+<style>
+    html {
+        overflow-x: hidden;
+    }
+
+    h4 {
+        color: #fffffe;
+    }
+
+    .card1-background {
+        background-image: url("https://images.unsplash.com/photo-1595862315115-ec8b51adacef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpYnJhcnl8ZW58MHwxfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card2-background {
+        background-image: url("https://images.unsplash.com/photo-1571598369143-81883c22ca13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card3-background {
+        background-image: url("https://images.unsplash.com/photo-1613999286484-f808d9630453?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card4-background {
+        background-image: url("https://images.unsplash.com/photo-1618939304347-e91b1f33d2ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YSUyMGhlYXJ0fGVufDB8MXwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card5-background {
+        background-image: url("https://images.unsplash.com/photo-1515361272650-f432a9320bd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGFuaW1lfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card6-background {
+        background-image: url("https://images.unsplash.com/photo-1503328427499-d92d1ac3d174?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: cover;
+        padding: 10rem 0 0;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+        background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.7) 30%, hsl(0 0% 0% / 1));
+
+    }
+
+    .card-title::after {
+        content: "";
+        position: absolute;
+        margin-top: 20px;
+        height: 4px;
+        background: ghostwhite;
+        left: 0;
+        width: 100%;
+        transform-origin: left;
+        transition: transform 500ms ease;
+    }
+
+    .card:hover .card-title::after,
+    .card:focus-within .card-title::after {
+        transform: scaleX(1);
+    }
+
+    .card-title {
+        position: relative;
+
+    }
+
+    .card:hover,
+    .card:focus-within {
+        transform: scale(1.05)
+    }
+
+    .card {
+        transition: transform 500ms ease;
+        overflow: hidden;
+    }
+
+    
+
+    @media (hover) {
+        .card-content {
+            transform: translateY(65%);
+            transition: transform 500ms ease;
+        }
+
+        .card:hover .card-content,
+        .card:focus-within .card-content {
+            transform: translateY(0);
+            transition-delay: 500ms;
+
+        }
+
+        .card:focus-within .card-content {
+            transition-duration: 0ms;
+        }
+
+        .card-content>*:not(.card-title) {
+            opacity: 0;
+            transition: opacity 500ms linear;
+        }
+
+        .card:hover .card-content>*:not(.card-title),
+        .card:focus-within .card-content>*:not(.card-title) {
+            opacity: 1;
+            transition-delay: 1000ms;
+        }
+
+        .card-title::after {
+            transform: scaleX(0);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+            transition-delay: 0ms !important;
+        }
+    }
+</style>
+
+<body>
+    <!-- CANVAS -->
+    <canvas class="webgl"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent text-caps">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Verwin's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="experience.html">Experience</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="skills.html">Skills</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div class="home page show">
+        <div class="titles">
+            <div class="page-title">PROJECTS</div>
+        </div>
+    </div>
+    <div class="container-fluid" style="top: 12rem; position: relative;">
+        <div class="container my-5 text-center p-5">
+            <h3>Here are the projects that showcase my skillsets & experiences. They range from school projects to
+                personal passion projects. With my interest in data science & analytics and software engineering, the
+                projects are mostly focused on these themes. Feel free to take a look! 🙋</h3>
+        </div>
+        <div class="container text-center my-5">
+            <h3 class="">👇 View My Projects 👇</h3>
+            <div class="row justify-content-center my-5">
+                <div class="col-4">
+                    <a href="#section-1" class="btn btn-info">Software Development</a>
+                </div>
+                <div class="col-4">
+                    <a href="#section-2" class="btn btn-info">Data Science & Analytics</a>
+                </div>
+            </div>
+        </div>
+        <div class="container" class="mt-5">
+            <div class="row" id="section-1">
+                <h1 class="text-center my-5"><u>SOFTWARE DEVELOPMENT PROJECTS</u></h1>
+                <div class="col-sm-6 my-5" data-aos="fade-right">
+                    <div class="card card1-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">LIBRARY SEAT BOOKING APPLICATION</h4>
+                            <p class="card-text">The school project for the module "Web Development II". The library
+                                seat booking system built on a microservice architecture using python flask & php. The
+                                solution
+                                allow students to book a specific library seat based on timeslots. Admins are able to
+                                track and monitor the seating arrangements and take action when a student is found to
+                                have multiple no-shows.</p>
+                            <p class="card-text">
+                                Software & Tools: Docker, Flask, Bootstrap
+                                <br>
+                                Libraries: gsap.js, chart.js
+                            </p>
+
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="https://github.com/tanjd/app"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="https://is216-project.herokuapp.com/"
+                                        role="button">APPLICATION</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#library-modal">
+                                        DEMO
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-5" data-aos="fade-left">
+                    <div class="card card2-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">HOTEL GUEST MANAGEMENT APPLICATION</h4>
+                            <p class="card-text">The school project for the module "Enterprise Solution Management". My
+                                team create an application which enable features for hotel guests, such as booking
+                                facilities & room service, searching for nearby attractions and checking in/checking
+                                out.</p>
+                            <p class="card-text">
+                                Software & Tools: Docker, Flask, Bootstrap, RabbitMQ
+                                <br>
+                                Libraries & APIs: google maps api, google places api, google geolocation api,
+                                calenderly, sendgrid api
+                            </p>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="https://github.com/verwinkwasmu/ESD_G1T3"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="#" role="button">APPLICATION</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        DEMO
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 my-5" data-aos="fade-right">
+                    <div class="card card3-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">CROWD & HYGIENE MONITORING DASHBOARD</h4>
+                            <p class="card-text">A school project for the module "Digital Business Transformation &
+                                Technologies". The team was tasked to create a prototype solution to solve an underlying
+                                issue. We choosed to tackle the issue concerning excessive crowd and low hygiene levels
+                                in foreign worker dormitories. This prototype built with chart.js, will allow the
+                                administration to monitor the crowd and hygiene levels of the dorms in real-time, and it
+                                will send an alert if crowd level has exceeded its limit or hygiene levels are below the
+                                minimum threshold level.</p>
+
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="https://github.com/verwinkwasmu/ESD_G1T3"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info"
+                                        href="https://dbtt-g1t4.herokuapp.com/dbtt-project/crowdLevelDashboard.html"
+                                        role="button">APPLICATION</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#dbtt-modal">
+                                        DEMO
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="section-2">
+                <h1 class="text-center my-5"><u>DATA SCIENCE & ANALYTICS PROJECTS</u></h1>
+                <div class="col-sm-6 my-5" data-aos="fade-right">
+                    <div class="card card4-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">HEART FAILURE MORTALITY PREDICTION</h4>
+                            <p class="card-text">The school project for the module "Data Mining & Business Analytics".
+                                My team was tasked to analyse a set of data from patients with a history of heart
+                                failure, in order to create the best classification model so as to maximise the
+                                predicative capabilities of predicting heart failure mortalities.</p>
+                            <p class="card-text">
+                                Language used: Python
+                                <br>
+                                Packages used: sklearn, seaborn, matplotlib, xgboost, catboost, plotly
+                            </p>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info"
+                                        href="https://github.com/verwinkwasmu/Predicting-Mortalities-caused-by-Heart-Failure"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-8">
+                                    <a class="btn btn-outline-info"
+                                        href="https://nbviewer.jupyter.org/github/verwinkwasmu/Predicting-Mortalities-caused-by-Heart-Failure/blob/main/IS424_Final_Project.ipynb"
+                                        role="button">JUPYTER NOTEBOOK</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-5" data-aos="fade-left">
+                    <div class="card card5-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">Recommender</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="https://github.com/verwinkwasmu/ESD_G1T3"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info" href="#" role="button">APPLICATION</a>
+                                </div>
+
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        DEMO
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-5" data-aos="fade-right">
+                    <div class="card card6-background m-auto pt-5" style="width: 29rem;">
+                        <div class="card-body card-content">
+                            <h4 class="card-title">FITBIT USER-PRODUCT RELATIONSHIP ANALYSIS</h4>
+                            <p class="card-text">The capstone project for the Google Data Analytics Professional
+                                Certification. I am tasked to provide recommendations on how to improve Bellabeat's
+                                products. This is done through analysing fitbit user-product relationship in order to
+                                provide data-driven recommendations for the company to improve their business
+                                strategies.</p>
+                            <p class="card-text">
+                                Language used: R
+                                <br>
+                                Packages used: tidyverse (ggplot2, dplyr)
+                            </p>
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-info"
+                                        href="https://github.com/verwinkwasmu/GoogleAnalyticsCapstoneProject"
+                                        role="button">GITHUB</a>
+                                </div>
+                                <div class="col-8">
+                                    <a class="btn btn-outline-info"
+                                        href="https://nbviewer.jupyter.org/github/verwinkwasmu/GoogleAnalyticsCapstonProject/blob/main/Bellabeat_data_driven_recommendations.ipynb"
+                                        role="button">JUPYTER NOTEBOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <!-- FOOTER -->
+
+            <nav class="navbar navbar-dark bg-transparent ">
+                <div class="container justify-content-center">
+                    <a href="https://github.com/verwinkwasmu" class="navbar-brand mx-3">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/verwin-kwa/" class="navbar-brand mx-3">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- WAD 2 Modal -->
+    <div class="modal fade" id="library-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Library Seat Booking Application Demo
+                        Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="../src/video/is216-demo.mov" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DBTT Modal -->
+    <div class="modal fade" id="dbtt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Library Seat Booking Application Demo
+                        Video</h5>
+                    <button type="button" class="btn-close btn-secondary" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" controls>
+                        <source src="../src/video/dbtt-project.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCROLL UP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">☝️</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"
+        integrity="sha512-0bzaetZStCnsUgbCtGVxftzF/L32PNOnrMlYLXwBOKl8cUjTSSDfJVyyJsNwGoI0iE0WUqni2eEfO35kJjFj5g=="
+        crossorigin="anonymous"></script>
+    <script src="../src/js/general_utility.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 350,
+            duration: 3000 // values from 0 to 3000, with step 50ms
+
+        });
+    </script>
+</body>
+
+</html>
