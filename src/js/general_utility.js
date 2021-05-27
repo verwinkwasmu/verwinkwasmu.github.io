@@ -17,3 +17,14 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function playSound() {
+    var sound = document.getElementById("audio");
+    sound.play();
+}
+
+const links = document.getElementsByTagName("a");
+
+for (var i = 0 ; i < links.length; i++) {
+    links[i].addEventListener('click' , playSound , false ); 
+ }

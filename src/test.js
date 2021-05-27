@@ -5,8 +5,29 @@ function init() {
 
     });
 
-    mybutton = document.getElementById("myBtn");
+    function playSound() {
+        var sound = document.getElementById("audio");
+        sound.play();
+    }
 
+    
+
+    const links = document.getElementsByTagName("a");
+
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', playSound, false);
+    }
+    
+
+    const buttonGrp = document.getElementsByClassName("btn");
+
+    for (var i = 0; i < buttonGrp.length; i++) {
+        buttonGrp[i].addEventListener('click', playSound, false);
+    }
+
+    mybutton = document.getElementById("myBtn");
+    mybutton.addEventListener('click', playSound, false);
+    
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
 
@@ -44,10 +65,10 @@ function init() {
     });
 
     function triggerEmail() {
-        
+
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-    
+
             // these IDs from the previous steps
             emailjs.sendForm('service_f1511xx', 'template_lyrk0r9', this)
                 .then(function () {
@@ -58,7 +79,7 @@ function init() {
     </div>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>`;
-    
+
                 }, function (error) {
                     document.getElementById("alert").innerHTML = `<div class="alert alert-danger d-flex align-items-center" role="alert">
     <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>

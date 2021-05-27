@@ -52,8 +52,8 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link cta" href="/src/about.html">About</a>
-						<a class="nav-link cta" href="/src/experience.html">Experience</a>
+						<a class="nav-link" href="/src/about.html" onclick="playSound();">About</a>
+						<a class="nav-link" href="/src/experience.html">Experience</a>
 						<a class="nav-link" href="/src/projects.html">Projects</a>
 						<a class="nav-link" href="/src/skills.html">Skills</a>
 						<a class="nav-link" href="/src/contact.html">Contact</a>
@@ -116,7 +116,9 @@
 		<!-- SCROLL UP BUTTON -->
 		<button onclick="topFunction()" id="myBtn" title="Go to top">☝️</button>
 		<!-- TEMP MEASURE -->
-        <div class="d-none" id="contact-form"></div>
+		<div class="d-none" id="contact-form"></div>
+		<audio id="audio" src="/src/audio/zapsplat_multimedia_button_click_007_53868.mp3"></audio>
+		
 	</main>
 
 	<!-- JQUERY -->
@@ -144,6 +146,8 @@
 
 		});
 	</script>
+	
+	
 </body>
 
 </html>
