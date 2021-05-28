@@ -34,133 +34,16 @@
         color: #fffffe;
     }
 
-    .card1-background {
-        background-image: url("https://images.unsplash.com/photo-1595862315115-ec8b51adacef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpYnJhcnl8ZW58MHwxfDB8YmxhY2t8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card2-background {
-        background-image: url("https://images.unsplash.com/photo-1571598369143-81883c22ca13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card3-background {
-        background-image: url("https://images.unsplash.com/photo-1613999286484-f808d9630453?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card4-background {
-        background-image: url("https://images.unsplash.com/photo-1618939304347-e91b1f33d2ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YSUyMGhlYXJ0fGVufDB8MXwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card5-background {
-        background-image: url("https://images.unsplash.com/photo-1515361272650-f432a9320bd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGFuaW1lfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=600&q=60");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card6-background {
-        background-image: url("https://images.unsplash.com/photo-1503328427499-d92d1ac3d174?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        background-size: cover;
-        padding: 10rem 0 0;
-    }
-
-    .card-content {
-        padding: 1.5rem;
-        background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.7) 30%, hsl(0 0% 0% / 1));
-
-    }
-
-    .card-title::after {
-        content: "";
-        position: absolute;
-        margin-top: 20px;
-        height: 4px;
-        background: ghostwhite;
-        left: 0;
-        width: 100%;
-        transform-origin: left;
-        transition: transform 500ms ease;
-    }
-
-    .card:hover .card-title::after,
-    .card:focus-within .card-title::after {
-        transform: scaleX(1);
-    }
-
-    .card-title {
-        position: relative;
-
-    }
-
-    .card:hover,
-    .card:focus-within {
-        transform: scale(1.05)
-    }
-
-    .card {
-        transition: transform 500ms ease;
-        overflow: hidden;
-    }
-
-
-
-    @media (hover) {
-        .card-content {
-            transform: translateY(65%);
-            transition: transform 500ms ease;
-        }
-
-        .card:hover .card-content,
-        .card:focus-within .card-content {
-            transform: translateY(0);
-            transition-delay: 500ms;
-
-        }
-
-        .card:focus-within .card-content {
-            transition-duration: 0ms;
-        }
-
-        .card-content>*:not(.card-title) {
-            opacity: 0;
-            transition: opacity 500ms linear;
-        }
-
-        .card:hover .card-content>*:not(.card-title),
-        .card:focus-within .card-content>*:not(.card-title) {
-            opacity: 1;
-            transition-delay: 1000ms;
-        }
-
-        .card-title::after {
-            transform: scaleX(0);
-        }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-        *,
-        *::before,
-        *::after {
-            animation-duration: 0.01ms !important;
-            animation-iteration-count: 1 !important;
-            transition-duration: 0.01ms !important;
-            scroll-behavior: auto !important;
-            transition-delay: 0ms !important;
-        }
-    }
+    
 </style>
 
 <body>
     <!-- CANVAS -->
     <canvas class="webgl"></canvas>
 
+    <audio autoplay loop>
+		<source src="audio/hanszimmer_bladerunner.mp3">
+	</audio>
 
     <main id="swup" class="transition-fade">
 
@@ -410,13 +293,15 @@
                         <div class="card card5-background m-auto pt-5" style="width: 29rem;">
                             <div class="card-body card-content">
                                 <h4 class="card-title">CONTENT-BASED ANIME RECOMMENDER</h4>
-                                <p class="card-text"><b>CURRENTLY STILL IN PROGRESS!</b></p>
+                                <p class="card-text">A content-based anime recommender built from a dataset that is web-scraped from the top anime series imdb web content</p>
+                                <p class="card-text">The web scrape script is built using python with the packages: pandas, beautifulsoup & requests. The dataset contains 200 rows, and metadata consisting of Title, Rank, Score, Synopsis & Genre.</p>
+                                <p class="card-text">The recommender is built using python with the packages: pandas, numpy, Rake and sklearn (cosine_similarity & CountVectorizer)</p>
                                 <div class="row text-center">
                                     <div class="col-4">
-                                        <a class="btn" href="" role="button">GITHUB</a>
+                                        <a class="btn" href="https://github.com/verwinkwasmu/content_based_anime_recommender" role="button">GITHUB</a>
                                     </div>
                                     <div class="col-8">
-                                        <a class="btn" href="#" role="button">JUPYTER NOTEBOOK</a>
+                                        <a class="btn" href="https://nbviewer.jupyter.org/github/verwinkwasmu/content_based_anime_recommender/blob/main/Anime_Recommender.ipynb" role="button">JUPYTER NOTEBOOK</a>
                                     </div>
                                 </div>
                             </div>
