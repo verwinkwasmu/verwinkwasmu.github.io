@@ -21,6 +21,10 @@ h2,
 h4 {
   color: #232946;
 }
+
+.h4 {
+  color: #232946;
+}
 .gradient {
   background-color: #af8c9d;
   background-image: linear-gradient(315deg, #af8c9d 0%, #8cacac 74%);
