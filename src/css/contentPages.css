@@ -48,16 +48,10 @@ h4 {
   top: 0;
   left: 0;
   outline: none;
-  mix-blend-mode: exclusion;
+  
 }
 
-.webgl {
-  position: fixed;
-  top: 0;
-  left: 0;
-  outline: none;
-  mix-blend-mode: exclusion;
-}
+
 .home {
   overflow: hidden;
   height: 100%;
