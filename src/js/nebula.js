@@ -15,19 +15,19 @@ function init() {
     let ambient = new THREE.AmbientLight(0x555555);
     scene.add(ambient);
 
-    let directionalLight = new THREE.DirectionalLight(0xff8c19);
+    let directionalLight = new THREE.DirectionalLight(0x008B8B);
     directionalLight.position.set(0, 0, 1);
     scene.add(directionalLight);
 
-    let orangeLight = new THREE.PointLight(0xcc6600, 50, 450, 1.7);
+    let orangeLight = new THREE.PointLight(0x008B8B, 50, 450, 1.7);
     orangeLight.position.set(200, 300, 100);
     scene.add(orangeLight);
 
-    let redLight = new THREE.PointLight(0xd8547e, 50, 450, 1.7);
+    let redLight = new THREE.PointLight(0x008B8B, 50, 450, 1.7);
     redLight.position.set(100, 300, 100);
     scene.add(redLight);
 
-    let blueLight = new THREE.PointLight(0x3677ac, 50, 450, 1.7);
+    let blueLight = new THREE.PointLight(0x008B8B, 50, 450, 1.7);
     blueLight.position.set(300, 300, 200);
     scene.add(blueLight);
 
