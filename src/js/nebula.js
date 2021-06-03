@@ -32,8 +32,8 @@ function init() {
     scene.add(blueLight);
 
     renderer = new THREE.WebGLRenderer({
-        canvas: canvas,
-        alpha: true
+        canvas: canvas
+        
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
     scene.fog = new THREE.FogExp2(0x0c141f, 0.001);
