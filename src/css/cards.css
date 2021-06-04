@@ -54,6 +54,12 @@ h4 {
   background-size: cover;
   padding: 10rem 0 0;
 }
+.card7-background {
+  background-image: url("/src/images/my_sphere.png");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
 
 .card-content {
   padding: 1.5rem;
