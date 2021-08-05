@@ -66,6 +66,12 @@ h4 {
   padding: 10rem 0 0;
   background-position: center;
 }
+.card9-background {
+  background-image: url("https://images.unsplash.com/photo-1595079836278-25b7ad6d5ddb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
 
 .card-content {
   padding: 1.5rem;
