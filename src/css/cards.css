@@ -90,6 +90,37 @@ h4 {
   background-position: center;
 }
 
+.card-visa-background {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQEP8_eM4zW8bw/company-logo_200_200/0/1626865473807?e=1661990400&v=beta&t=LtFas5pmBYyalzJmklzookt1zbMlg9sNw4NrjmZeAME");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
+.card-apple-background {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_200_200/0/1595530301220?e=1661990400&v=beta&t=_JO4PezYEGvmPruWNX1oSBLRkehJLf44RQgb9GKEe7E");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
+.card-yara-background {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E0BAQHhub-HgN23Xw/company-logo_200_200/0/1625122804178?e=1661990400&v=beta&t=iTouwwdvgn47TGoARh5HUATOSfZQRS8C6ZASHdJk6yA");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
+.card-accenture-background {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C560BAQHEQadDieF8mg/company-logo_200_200/0/1652888549818?e=1661990400&v=beta&t=vuQzMSmXuf2y-s3NPIGE4KUJ2YDjU09KkJPAfhfZpVA");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
+.card-ackcio-background {
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4D0BAQGygMFhbKJhPg/company-logo_200_200/0/1519922085317?e=1661990400&v=beta&t=tbi4lVGp5oDLpJHGZs-nmk6-mZ3GoyNqivGdPgXIx5U");
+  background-size: cover;
+  padding: 10rem 0 0;
+  background-position: center;
+}
+
 .card-content {
   padding: 1.5rem;
   background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.7) 30%, hsl(0 0% 0% / 1));
